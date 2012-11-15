@@ -5,11 +5,11 @@
  * Time: 12:57 PM
  * To change this template use File | Settings | File Templates.
  */
-package main
+package mvc
 
 import ("github.com/gorilla/mux"
 	"net/http"
-	"github.com/thesyncim/mvc/controllers"
+	"controllers"
 
 )
 

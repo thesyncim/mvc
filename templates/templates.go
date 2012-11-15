@@ -16,10 +16,10 @@ import (
 
 
 
-var templates = template.Must(template.ParseFiles("edit.html", "view.html"))
+var templater = template.Must(template.ParseFiles("edit.html", "view.html"))
 
 func RenderTemplate(w http.ResponseWriter, tmpl string, p controllers.Entry) {
-	err := templates.ExecuteTemplate(w, tmpl + ".html", p)
+	err := templater.ExecuteTemplate(w, tmpl + ".html", p)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
