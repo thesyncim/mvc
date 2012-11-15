@@ -25,7 +25,7 @@ type Entry struct {
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
 
-	entry := &Entry{}
+	entry := Entry{}
 	entry.Title = "New Go Templates (mid-2011)"
 	entry.Content = "A trivial example of how to use them.  see documentation and Go source code/tests for more examples"
 
